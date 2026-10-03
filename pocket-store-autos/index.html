@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="PocketStore Autos - catálogo de vehículos disponible offline">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>PocketStore Autos</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🚘</div>
+      <div>
+        <h1>PocketStore Autos</h1>
+        <p>Tu catálogo de autos, incluso sin Internet</p>
+      </div>
+    </div>
+    <span id="connection-status" class="status">Comprobando conexión...</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PWA · VANILLA JS</p>
+        <h2>Encuentra tu próximo auto</h2>
+        <p>El catálogo se obtiene desde una API pública y queda guardado para poder consultarlo sin conexión.</p>
+      </div>
+      <button id="reload-button" type="button">Actualizar catálogo</button>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <h2>Catálogo de autos</h2>
+          <p id="message">Cargando vehículos...</p>
+        </div>
+        <label class="search-box">
+          <span>Buscar</span>
+          <input id="search" type="search" placeholder="Ej. Dodge, Tesla...">
+        </label>
+      </div>
+
+      <div id="catalog" class="catalog" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>PocketStore Autos · PWA desarrollada con HTML, CSS y JavaScript</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

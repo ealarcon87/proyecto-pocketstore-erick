@@ -1,0 +1,14 @@
+{
+  "name": "PocketStore Autos - Catálogo Offline",
+  "short_name": "PocketAutos",
+  "description": "Catálogo de automóviles PWA disponible sin conexión.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#111827",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
